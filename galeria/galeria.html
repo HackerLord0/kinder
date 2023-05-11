@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- La sigueinte linea de codigo es nescesaria ya que en el link al que se hace referencia tiene la hoja CSS que le dara el efecto de galeria en cuadro a el index -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+   <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+   <link rel="stylesheet" href="css/gallery-grid.css">
+    <title>Galeria de Sitio</title>
+  
+
+
+</head>
+<body>
+
+    <div class="container gallery-container">
+
+    <h1>Galeria</h1>
+
+    <p class="page-description text-center">Nuestras Instalaciones</p>
+    
+    <div class="tz-gallery">
+
+        <!-- Se han modificado los parametros de busqueda de carpeta ya que al tener ../ este buscaria en todas las carpetas del DOM hasta encontrar la imagen, como la carpeta que contiene las imagenes esta en el ROOT de el index no es nescesario colocar ../ -->
+        
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/1.jpg">
+                    <img src="images/1.jpg" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/2.jpg">
+                    <img src="images/2.jpg" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="images/3.jpg">
+                    <img src="images/3.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/4.jpg">
+                    <img src="images/4.jpg" alt="Coast">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/5.jpg">
+                    <img src="images/5.jpg" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/6.jpg">
+                    <img src="images/6.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/7.jpg">
+                    <img src="images/7.jpg" alt="Rocks">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/8.jpg">
+                    <img src="images/8.jpg" alt="Benches">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/9.jpg">
+                    <img src="images/9.jpg" alt="Benches">
+                </a>
+            </div>
+           
+        </div>
+ <center><h1><a href="../index.html">Inicio</a></h1></center>
+    </div>
+        
+
+</div>
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>  
+   <script>
+    baguetteBox.run('.tz-gallery');
+</script>
+    
+    
+</body>
+</html>

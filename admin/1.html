@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/adm.css">
+<title>Acceso</title>
+</head>
+
+<body>
+    <center>
+       
+    <script language="JavaScript"> 
+
+function right(e) { 
+var msg = " ¡ERROR---POR FAVOR LLENA LOS CAMPOS---ERROR! "; 
+if (navigator.appName == 'Netscape' && e.which == 3) { 
+alert(msg);  
+return false; 
+} 
+else 
+if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) { 
+alert(msg);  
+return false; 
+} 
+return true; 
+} 
+document.onmousedown = right; 
+
+</script>
+<script  language=JavaScript> 
+function go(){
+
+if (document.form.password.value=='admin'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("¡contraseña incorrecta.!"); 
+    } 
+} 
+</script> 
+<form name=form action="RegD.html">
+
+    <p>Solo acceso autorizado.</p>   
+    
+<p>Contraseña: </p> 
+    <input type=password name=password> <br><br>
+<input onclick=go() type=button value=Acceder>
+
+    </form>
+    
+    <a href="../posadmin/indexa.html">Inicio</a></center>
+    </body>
+</html>
+  

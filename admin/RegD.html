@@ -1,0 +1,40 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de control</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body > 
+    <section> 
+    <div class="user singupBx">
+            <div class="formBx">
+            <center><form action="registro.php" method="post">
+                <h2>Crear una cuenta nueva.</h2>
+                <p>Tipo de usuario:</p>
+                <select  name="tipouser">
+  <option value="encargado">Encargado</option> 
+  <option value="director" selected>Director</option>
+</select><br><br>
+                <input type="text" name="usuario" placeholder="Usuario"><br><br>
+                <input type="text" name="nombre" placeholder="Nombre"><br><br>
+                <input type="text" name="apellidos" placeholder="Apellidos"><br><br>
+                <input type="password" name="pass" placeholder="Contraseña"><br><br>
+                <input type="password" name="cpass" placeholder="Confirmar Contraseña"><br><br>
+                <input type="email" name="email" placeholder="Email"><br><br>
+                 <center><input type="submit" name="" value="Registrar"><br><br></center>
+                 <a href="../posadmin/indexa.html">Volver</a>
+                </form></center>
+            </div>
+                   <center> <a href="../posadmin/indexa.html"><img src="volver.png "></a></center>
+        </div>
+     
+    </section>
+    <script type="text/javascript">
+    function toggleForm(){
+        var container = document.querySelector('.container');
+        container.classList.toggle('active')
+    }
+    </script>
+    </body>
+</html>

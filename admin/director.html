@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de control</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+    <section>
+    <div class="container">
+        <div class="user singinBx">
+        <div class="imgBx"><img src="img.JPG"></div>
+            <div class="formBx">
+            <form action="logind.php" method="post">
+                <h2>Entrar</h2>
+                <input type="text" name="usuario" placeholder="Usuario">
+                <input type="password" name="pass" placeholder="Contraseña">
+                 <input type="submit" name="" value="Login">
+                <p class="singup"><a href="1.html" onclick="toggleForm();">Crear cuenta.</a></p>
+                 <a href="../index.html">Inicio</a>
+                </form>
+            </div>
+        </div>
+        <div class="user singupBx">
+            <div class="formBx">
+            <form action="registro.php" method="post">
+                <h2>Crear una cuenta nueva.</h2>
+                <p>Tipo de usuario:</p>
+                <select  name="tipouser">
+  <option value="encargado">Encargado</option> 
+  <option value="director" selected>Director</option>
+</select>
+                <input type="text" name="usuario" placeholder="Usuario">
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="apellidos" placeholder="Apellidos">
+                <input type="password" name="pass" placeholder="Contraseña">
+                <input type="password" name="cpass" placeholder="Confirmar Contraseña">
+                <input type="email" name="email" placeholder="Email">
+                 <input type="submit" name="" value="Registrar">
+                 <a href="../posadmin/indexa.html">Volver</a>
+                </form>
+            </div>
+                    <div class="imgBx"><img src="imgn.JPG"></div>
+        </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    function toggleForm(){
+        var container = document.querySelector('.container');
+        container.classList.toggle('active')
+    }
+    </script>
+    </body>
+</html>

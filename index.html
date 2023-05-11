@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>Tu Mejor Opcion En Preescolar!</title>
+    
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="menu">
+    <ul>
+        <li><a href="#" onclick="toggleMenu();"></a></li>
+        <li><a href="galeria/galeria.html" onclick="toggleMenu();">Galeria</a></li>
+        <li><a href="mision.html" onclick="toggleMenu();">Misión</a></li>
+        <li><a href="vision.html" onclick="toggleMenu();">Visión</a></li>
+        <li><a href="preguntas/preguntas.html" onclick="toggleMenu();">Preguntas Frecuentes</a></li>
+        <li><a href="contacto/contacto.html" onclick="toggleMenu();">Contactanos</a></li>
+        <li><a href="posadmin/acadmin.html" onclick="toggleMenu();">Administracion</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+    <header>
+        
+        <h2 class="logo"><img src="images/logo.png"></h2>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="vid.mp4" muted loop autoplay></video>
+        
+        
+        <div class="overlay"></div>
+     <div class="text">
+         <br>
+          <br>
+         <h2>CAMILO JOSÉ CELA</h2>
+         <h3>El mejor plan educativo.</h3>
+         <p>Calle Puebla s/n,
+Barrio San Juan, Tultepec,
+Tultepec, Estado de México,
+C.P. 54960
+
+ (Entre Mariano Matamoros y Emiliano Zapata, A Un Costado De La Conasupo Del Barrio San Juan)</p>
+         <a href="contacto/contacto.html">Contactanos!</a>
+        </div>
+      
+    </section>
+    
+    <script type="text/javascript">
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var banner = document.querySelector('.banner');
+        menuToggle.classList.toggle('active');
+       banner.classList.toggle('active');
+    } 
+    </script>
+    
+    </body>
+</html>
